@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* bom por no começo */
+}
+
+.grid .col {
+    height: 300px;
+    width: 33.33%; /* supondo que queira encaixar três colunas */
+    float: left; /* faz o elemento ocupar apenas o espaço necessário, assim podendo usar o estava vago (colocar uma div do lado da outra). 
+                    não soma as margens. ainda, quando usa float dentro de filhos, esses elementos não computam tamanho.
+                    Logo, o tamanho do conteúdo é 0. Então, quando for adicionado outro elemento ele vai seguir o fluxo do float.
+                    Para quebrar isso pode usar um clear no elemento que vem posterior a ele (abaixo). */
+    padding: 15px;
+}
+
+p {
+    clear: both; /* both diz pra da clear na esq e na dir, assim sendo independente de qual lado o float de alinhou */
+}
+
+.grid::after {
+    content: '';
+    display: block;
+    clear: both;
+    /* essas linhas de código fazem a própria grid se limpar, quebra a cabeça ai */
+}
+
+/* não se pode simplesmente jogar um border-box no .grid .col e dps socar um padding pq o padding vai da um enchimento, que vai ser da mesma cor que é o bloco, assim não o deixando separado. se fizer um margin pior ainda pq o border-box não inclui margin. por isso criar um outro elemento e tirar a cor do elemento do meio, pq ai vc pode da um padding e ficar com efeito de margin */
+
+.grid .col-content {
+    height: 100%;
+    width: 100%;
+    background-color: pink;
+}
+
+.grid {
+    padding: 15px;
+}

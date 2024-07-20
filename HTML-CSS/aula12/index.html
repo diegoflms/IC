@@ -1,0 +1,119 @@
+<!-- aula 12 - forms -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 7</title>
+
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        label {
+            cursor: pointer; /* quando clicar no nome cai na caixa de texto */
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="get" target="_blank"> <!-- container de formulário ; action é pra onde o formulário vai, method ??, target é pra onde será enviado -->
+        <p>Formulário</p>
+        
+        <p>
+            <label for="nome">Nome:</label><br>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome" value="diego"> <!-- permite digitar um texto ; o name é a chave desse valor enviado, placeholder é uma dica no campo, value é um valor que já vem -->
+        </p> 
+
+        <p>
+            <label for="fogo">Sou botafoguense</label>
+            <input type="checkbox" id="fogo" name="botafoguense" value="sim"> <!-- type de checkbox, vai chegar no backend "sim", se a caixa for marcada -->
+        </p>
+
+        <p>
+            Comida:<br>
+            <label for="macarrao">Macarrão</label>
+            <input type="radio" id="macarrao" name="comida" value="macarrao"> <!-- checkbox porém só pode escolher uma. o name tem que ser ENGUAL -->
+            <br><label for="panqueca">Panqueca</label>
+            <input type="radio" id="panqueca" name="comida" value="panqueca">
+            <br><label for="bolo">Bolo</label>
+            <input type="radio" id="bolo" name="comida" value="bolo">
+        
+        </p>
+
+        <p>
+            <label for="date">Data:</label><br>
+            <input type="date" id="date" name="date" value="2004-12-02"> <!-- selecionar data, a pré selecionada é meu niver -->
+        </p>
+
+        <p>
+            <label for="datetime">Data:</label><br>
+            <input type="datetime-local" id="datetime" name="datetime" value="2004-12-02T04:00"> <!-- selecionar data e horário -->
+        </p>
+
+        <p>
+            <label for="time">Data:</label><br>
+            <input type="time" id="time" name="time" value="04:00"> <!-- forms de horário, pode colocar segundos tb -->
+        </p>
+
+        <p>
+            <label for="cor">Cor:</label><br>
+            <input type="color" id="cor" name="cor" value="#ffffff"> <!-- forms de cor -->
+        </p>
+
+        <p>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="email@example.com"> <!-- forms de email -->
+        </p>
+
+        <p>
+            <label for="password">Senha:</label><br>
+            <input type="password" id="password" name="password" placeholder="Digite sua senha"> <!-- forms de senha -->
+        </p>
+
+        <p>
+            <label for="file">Arquivo:</label><br>
+            <input type="file" id="file" name="file" accept=".png" multiple> <!-- forms de arquivos, accept filtra os arquivos (não confiar tanto), multiple deixa selecionar vários arquivos -->
+        </p>
+
+        <p>
+            <label for="number">Número:</label><br>
+            <input type="number" id="number" name="number" placeholder="Digite um número entre 1 e 100" min="1" max="100"> <!-- forms de numero, o min e max são limites. pode usar step tb -->
+        </p>
+
+        <p>
+            <label for="url">Link:</label><br>
+            <input type="url" id="url" name="url" placeholder="URL"> <!-- forms de link -->
+        </p>
+
+        <p>
+            <label for="search">Busca:</label><br>
+            <input type="search" id="search" name="search" placeholder="busca"> <!-- forms de busca, mais semântica mesmo -->
+        </p>
+
+        <p>
+            <label for="select">Times:</label><br>
+            <select id="select" name="time"> <!-- da pra fazer com multiple tb, tag para fazer um select de itens-->
+                <optgroup label="RJ"> <!-- organiza as opções em grupos -->
+                    <option value="BFR" selected>Botafogo</option> <!-- selected é o selecionado -->
+                    <option value="CRVG" disabled>Vasco</option> <!-- disabled aparece mas não da pra marcar -->
+                </optgroup>
+                <optgroup label="MG">
+                    <option value="CAM" disabled>Galo</option>
+                    <option value="CEC" disabled>Cruzeiro</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="textarea">Texto:</label><br>
+            <textarea name="textarea" id="textarea" rows="5" cols="15"></textarea> <!-- espaço livre pra digitar texto -->
+        </p>
+
+        <p>
+            <button type="submit">Enviar</button> <!-- botao de enviar -->
+            <button type="reset">Reset</button> <!-- botao de resetar -->
+        </p>
+    </form>
+</body>
+</html>

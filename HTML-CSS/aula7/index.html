@@ -1,0 +1,60 @@
+<!-- aula 7 -->
+<!-- os containers usados são para atribuir a semântica,
+ assim sendo muito importante estar bem estruturado, para fornecer
+ mais acessibilidade à página -->
+ <!-- usar um screen reader para saber se a página está bem estruturada -->
+
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Segunda Página</title>
+
+</head>
+
+<body>
+
+  <header> <!-- container para agrupar elementos do cabeçalho, semântica -->
+    <h1>Título principal</h1>
+    <p>Pequena descrição</p>
+  </header>
+
+  <aside> <!-- container de seção lateral, semântica -->
+    <nav> <!-- container de navegação, semântica -->
+      <ul> <!-- unordered list -->
+        <li><a href="#">Link</a></li>
+        <li><a href="#">Link</a></li>
+        <li><a href="#">Link</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <section> <!-- container genérico de algo da página, semântica -->
+    <header>
+        <h2>Título da seção</h2>
+    </header>
+    <article> <!-- container para organizar algo menor, semântica -->
+        <h3>Título do article</h3>
+        <p>Algum texto</p>
+    </article>
+    <article>
+        <h3>Título do article</h3>
+        <p>Algum texto</p>
+    </article>
+    <article>
+        <h3>Título do article</h3>
+        <p>Algum texto</p>
+    </article>
+  </section>
+
+  <footer> <!-- container para rodapé, semântica -->
+    <p>Contato</p>
+  </footer>
+
+</body>
+
+</html>

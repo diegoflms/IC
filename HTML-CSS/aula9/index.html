@@ -1,0 +1,48 @@
+<!-- aula 9 -->
+ <!-- box model é a relação entre margin, content (height e width), padding e border -->
+<!-- padding é enchimento!! -->
+
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página 4</title>
+
+  <style>
+    * { /* sugestão: fazer esse reset em todo código */
+      box-sizing: border-box; /* garante que no width está incluso o border, padding e margin */
+      margin: 0px;
+      padding: 0px;
+    }
+    .section-one {
+      width: 200px;
+      height: 50px;
+      background-color: deeppink;
+      border: 5px solid black; /* borda */
+      padding: 15px; /* enchimento, padding */
+      color: #fff;
+      margin: 20px; /* a margem entre elementos não é cumulativa, sobressai a maior entre as margens */
+    }
+
+    .section-two {
+      background-color: cyan;
+      width: 200px;
+      height: 50px;
+      border: 5px solid black; /* borda. dessa maneira configura todos os lados com as três propriedades necessárias (style, width, color) */
+      padding: 15px; /* da pra escrever do jeito que já foi mencionado */
+      margin: 20px; /* da pra escrever do jeito que já foi mencionado */
+      }
+  </style>
+
+</head>
+
+<body>
+  <div class="section-one">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</div>
+  <div class="section-two">2</div>
+</body>
+
+</html>

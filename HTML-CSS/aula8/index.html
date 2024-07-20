@@ -1,0 +1,64 @@
+<!-- aula 8 -->
+<!-- abstrações do HTML: uma página web é estruturada em caixas (containers) dentro de outras caixas -->
+
+ <!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terceira página</title>
+
+    <style>
+      * { /* representa tudo, todos os elementos da página*/
+        margin: 0px;
+        padding: 0px;
+      }
+
+      body { /* estilizar o body da página */
+        /* algumas coisas relacionadas à imagem de fundo */
+        background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/8728e059-7686-4d2d-a67a-84872bd71025/7d183fa1-28af-4208-a99f-fd2881757b59/BR-pt-20240708-POP_SIGNUP_TWO_WEEKS-perspective_WEB_c610c849-c94c-4c10-9958-e90644b53632_large.jpg);
+        background-size: cover;
+        background-position: top center;
+    }
+
+      #heading {
+        background: rgba(0, 0, 0, 0.7); /* red, green, blue e alpha. 000 é preto e o alpha é opacidade */
+      }
+
+      #heading div {
+        display: flex; /* maneira de organizar os blocos, vai ser aprofundado depois */
+        justify-content: space-between; /* maneira de organizar os blocos, vai ser aprofundado depois */
+        width: 90%; /* proporcional a largura do navegador */
+        margin: 0 auto; /* o primeiro é cima/baixo, o segundo esq/dir */
+      }
+
+      #heading .h1 { /* todos os h1 do id heading */
+        font-size: 20px;
+        text-transform: uppercase;
+        padding: 15px 0px 15px 0px; /* topo, direita, baixo, esquerda. quando for igual pode escrever apenas 15px */
+      }
+
+      #heading a {
+        color: #fff;
+        text-decoration: none;
+        font-family: sans-serif;
+      }
+    </style>
+
+</head>
+
+<body>
+
+  <header id="heading">
+    <div>
+      <h1 class="h1"><a href="#">Netflix</a></h1>
+      <h2 class="h1"><a href="#">Netflix</a></h2>
+    </div>
+  </header>
+
+</body>
+
+</html>

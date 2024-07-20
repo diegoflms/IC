@@ -1,0 +1,77 @@
+<!-- aula 10 - listas -->
+
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página 5</title>
+
+  <style>
+    * {
+      margin: 0; /* isso tira a formatação das listas */
+      padding: 0;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        background-color: red;
+    }
+
+    body nav ul li a { /* caminho completo, especificar o que vai ser estilizado */
+        color: #fff;
+        text-decoration: none;
+        font-family: sans-serif;
+        padding: 10px; /* o padding só funciona direito se for um bloco */
+        display: block;
+        text-transform: uppercase;
+    }
+
+    nav ul {
+        display: flex; /* aprofundado depois */
+        list-style: none; /* tirar os pontos de tópico */
+        margin-left: 10px;
+    }
+
+    nav a:hover { /* classe para quando passa o mouse em cima */
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Products</a></li>
+    </ul>
+  </nav>
+
+  <ul> <!-- unordered list -->
+    <li>Item 1</li>
+    <li>Item 2</li>
+  </ul>
+
+  <ol type="I" start="2"> <!-- ordered list ; o atributo type define qual ordenador vai usar e o start define o começo -->
+    <li>Item 1</li>
+    <li>Item 2</li>
+  </ol>
+
+  <dl> <!-- description list -->
+    <dt>BFR</dt>
+    <dd>Botafogo de Futebol e Regatas</dd>
+    <dt>RBR</dt>
+    <dd>Red Bull Bragantino</dd>
+  </dl>
+
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+<!-- aula 11 - tabelas -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        table caption { /* estliziar a legenda da tabela */
+            caption-side: bottom;
+            font-size: 12px;
+            margin: 5px 0;
+        }
+        table {
+            border-collapse: collapse; /* unir as bordas */
+            width: 800px;
+        }
+
+        table td, table th { /* estilização só pra mostrar a tabela */
+            border: solid 1px black;
+            text-align: left;
+            padding: 5px;
+        }
+
+        table tfoot {
+            background-color: lightgray;
+        }
+
+        .responsive-table {
+            max-width: 100%;
+            overflow-x: auto;
+            /* essas duas linhas criam uma barra de arrastar para nas situações em que a tabela for muito grande possa arrastar apenas ela e não a página inteira */
+        }
+    </style>
+</head>
+<body>
+    <div class="responsive-table">
+        <table> <!-- tabela -->
+            <caption>Nome da tabela</caption> <!-- nome da tabela -->
+            <thead> <!-- cabeçalho da tabela -->
+                <tr> <!-- table row, linha -->
+                    <th>Título 1</th> <!-- header da tabela, coluna tb -->
+                    <th>Título 2</th>
+                    <th>Título 3</th>
+                </tr>
+            </thead>
+            <tbody> <!-- corpo da tabela -->
+                <tr>
+                    <td>Corpo 1</td> <!-- coluna -->
+                    <td>Corpo 3</td>
+                    <td>Corpo 2</td>
+                </tr>
+                <tr>
+                    <td colspan="2" rowspan="2">Corpo 1</td> <!-- merge de células em horinzontal/vertical -->
+                    <td>Corpo 2</td>
+                </tr>
+                <tr>
+                    <td>Corpo 2</td>
+                </tr>
+            </tbody>
+            <tfoot> <!-- rodapé da tabela -->
+                <tr>
+                    <td>Corpo 1</td>
+                    <td>Corpo 3</td>
+                    <td>Corpo 2</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
+</html>

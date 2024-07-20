@@ -1,0 +1,30 @@
+/* especificidade */
+
+/* ordem de especificidade:
+   ID
+   classes, atributos e pseudoclasses
+   elementos e pseudoelementos */
+/* quando empata, prevalece o último */
+/* o vscode fala a qtd de cada um dos três graus, que serve para definir a prioridade */
+
+#p { /* 1 0 0 */
+    background-color: red;
+}
+
+.p { /* 0 1 0 */
+    background-color: yellow;
+}
+
+#p.p { /* 1 1 0 */
+    background-color: yellow;
+}
+
+p#p.p { /* 1 1 1 */
+    background-color: purple;
+}
+
+/* da pra viajar na especificidade */
+/* o atributo style tem a maior especificidade */
+/* o !important quebra qlqr especificidade */
+
+/* herança: initial desativa e inherit ativa */

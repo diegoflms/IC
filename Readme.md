@@ -1,0 +1,1 @@
+Anotações e estudos de conteúdos relacionados à IC (Web, etc), realizado durante o segundo semestre de 2024 ao primeiro semestre de 2025.

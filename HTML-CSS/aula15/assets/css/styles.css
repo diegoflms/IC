@@ -1,0 +1,147 @@
+/* seletores básicos, pseudoclasses e pseudoelementos */
+
+* { /* selecionar TODOS os elementos da página */
+    margin: 0; /* zerar os elementos, deixar para a gente definir isso */
+    padding: 0; /* zerar os elementos, deixar para a gente definir isso */
+}
+
+p { /* seleciona todas as tags da página */
+    color: red;
+}
+
+section p { /* seleciona apenas o os "p" que estão dentro dos "section", mais específico */
+    color: green;
+}
+
+.heading { /* seleciona uma classe */
+    color: purple;
+}
+
+div.main h2 { /* também pode ser mais específico com o que está dentro de uma classe 
+              /* pode fazer essa combinação entre classes e id */
+              /* quando escreve o elemento colado com a classe/id significa que tem que ser um elemento daquela classe */
+    background-color: black;
+    color: white;
+}
+
+.one.two { /* quando escreve junto significa que tem que ter as duas classes / id */
+    border: 1px solid black;
+}
+
+.main > .heading { /* tem que ser filho direto */
+    color: pink;
+}
+
+.main h1+h2+p { /* dentro da classe, aplica a estilização no ultimo elemento, apenas se vier precedido diretamente dos anteriores */
+    background-color: aqua;
+}
+
+.main h1~pre { /* dentro da classe, aplica a estilização no ultimo elemento, apenas se vierem depois de um p (não necessário ser diretamente) */
+    color: brown;
+}
+
+[meu-atributo="X"] { /* selecionar atributos (criados ou não). pode ter um valor para ser mais específico */
+    background-color: lightblue;
+}
+
+[meu-atributo~="Y"] { /* o til diz que precisa ter pelo menos esse valor */
+    background-color: lightgreen;
+}
+
+[meu-atributo^="gr"] { /* o circunflexo indica que tem que começar com esse valor */
+    background-color: lightyellow;
+}
+
+[meu-atributo$="eno"] { /* o cifrão indica que tem que terminar com esse valor */
+    background-color: lightskyblue;
+}
+
+[meu-atributo*="ta fo"] { /* o asterisco indica que tem que conter esse valor */
+    background-color: lightcoral;
+}
+
+/* pseudoclasse reflete o estado do elemento */
+
+.one.two:hover { /* o dois pontos indica a pseudoclasse. hover é quando passa o mouse em cima */
+    background-color: hotpink;
+}
+
+a:link { /* link não visitado */
+    color: forestgreen;
+}
+
+a:visited { /* link visitado */
+    color: firebrick;
+}
+
+a:active { /* quando segurar o link */
+    background-color: black;
+}
+
+input.a:focus { /* quando está mexendo com o input */
+    border: 10px solid black;
+}
+
+input.a:required { /* quando o texto é requerido */
+    font-style: italic;
+}
+
+input.a:disabled { /* quando estiver desativado */
+    background-color: red;
+    cursor: not-allowed;
+}
+
+input.a:enabled { /* quando estiver ativado */
+    background-color: lightpink;
+}
+
+/* sacada pra GENIAL pra fazer menu */
+input:checked + pre { /* quando estiver selecionado */
+    background-color: red;
+}
+
+ul, li {
+    margin-left: 20px;
+}
+
+li:first-child { /* primeiro item da lista */
+    background-color: green;
+}
+
+li:last-child { /* último item da lista */
+    background-color: blue;
+}
+
+p.g4:not(.essenao) { /* pseudoclasse que seleciona todos menos o que tiver na especificação */
+    background-color: blueviolet;
+}
+
+ul li:nth-child(odd) { /* seleciona o índice que estiver indicado: even, odd, número, 3n, 3n+10. tem que ser irmãos */
+    color: aqua;
+}
+
+/* pseudoelemento é um elemento que não existe na página e é incluído pelo css */
+
+p.cinco::after { /* insere um pseudoelemento depois */
+    content: ' *'; /* pseudoelemento a ser inserido */
+}
+
+p.cinco::before { /* insere um pseudoelemento antes */
+    content: '1. '; /* pseudoelemento a ser inserido */
+}
+
+p.cinco::first-letter { /* estiliza o primeiro caractere */
+    font-size: 50px;
+}
+
+p.cinco::first-line { /* estiliza a primeira linha */
+    background-color: black;
+}
+
+p.cinco::selection { /* estiliza quando selecionado */
+    background-color: white;
+}
+
+::placeholder { /* estilizar o placeholder */
+    color: red;
+}

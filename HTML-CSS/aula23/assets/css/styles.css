@@ -1,0 +1,16 @@
+.txt {
+    box-sizing: content-box; /* tudo que é relacionado a altura/largura só é aplicado no conteúdo, config padrão. border, padding e margin é somado ao conteúdo */
+    /* padding-box adiciona o padding à conta e o border-box adiciona o padding e a borda. logo assim 60px são 60px */
+    display: block; /* quando o display é inline, não pega tamanho nem altura */
+    background-color: red;
+    width: 100%; /* afeta apenas a parte do conteúdo */
+    height: 100%; /* afeta apenas a parte do conteúdo */
+    max-width: 900px; /* usando junto com width com porcentagem, ajuda a fazer um design mais responsivo */
+    max-height: 500px;
+    min-width: 0;
+    min-height: 10px; /* se a div não tiver conteúdo, ainda vai aparecer pq sua altura mínima é maior que 0 */
+    overflow: auto; /* ajuda quando o conteúdo é maior que o elemento, ai para não ficar sobrando cria a barra lateral */
+    margin: 0 auto; /* coloca as divs no meio */
+    padding: 50px;
+    border: 5px solid black;
+}

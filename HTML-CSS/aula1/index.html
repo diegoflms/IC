@@ -1,0 +1,86 @@
+<!-- aulas 1 a 6 -->
+
+<!DOCTYPE html> <!-- Definindo o documento como HTML5 -->
+
+<html lang="pt-BR"> <!-- Corpo do HTML; idioma da página -->
+
+  <head> <!-- Metadados -->
+
+    <meta charset="UTF-8"> <!-- Conjunto de caracteres usados -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Serve para ajustar o tamanho da página com o tamanho da tela do dispositivo -->
+    <title>Minha primeira página</title> <!-- Título da página no navegador -->
+
+    <style> /* tag para poder usar CSS no HTML */
+
+      /* padrão de nomenclatura é usar hífen nos espaços */
+
+      h1 { /* estilizar todas tags */
+        background-color: blueviolet;
+      }
+
+      #texto-menos-importante { /* id */
+        background-color: lightgreen;
+      }
+
+      #heading-dois {
+        background-color: lightpink;
+      }
+
+      .fundo-azul { /* class */
+        background-color: aqua;
+      }
+
+    </style>
+
+  </head>
+
+  <body> <!-- O que realmente aparece na página -->
+
+    <h1>Heading principal</h1> <!-- importante estruturar os tópicos da página usando a prioridade correta (semântica!), pois os programas de busca, de leitura de tela, etc dependem disso para obter informações da página -->
+    <p> <!-- Texto gerado por "Lorem" -->
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+      Laboriosam aliquid temporibus, tenetur animi hic cumque officia quia nihil dolor modi? 
+      Earum officia dolore placeat hic molestiae illum magni rerum perferendis.
+    </p>
+
+    <hr> <!-- tag de inserir linha -->
+
+    <h2 class="fundo-azul">Subtópicos</h2> <!-- class pode identificar vários elementos -->
+    <p> <!-- algumas tags de texto e semântica de display in-line estão nesse parágrafo -->
+      <b>Lorem ipsum</b> <i>dolor sit</i> <strong>consectetur adipisicing</strong> <em>elit</em>. 
+      <a href="https://google.com" target="_blank">
+        <img style="background-color: black;"
+        src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_light_color_272x92dp.png" alt="logo da Google" width="50" height="16">
+      </a> <!-- pesquise mais sobre link e img no W3S -->
+      <del>Laboriosam</del> <ins>aliquid</ins> <s>temporibus</s>, <u>tenetur</u> animi hic cumque officia quia nihil dolor modi? 
+      <span style="background-color: red; font-size: 25px;">Earum officia dolore placeat hic molestiae illum magni rerum perferendis.</span> <!-- tag de container genérico in-line -->
+      <br> <!-- tag de quebra de linha -->
+      <small>2<sup>2</sup>, H<sub>2</sub>O</small> <br>
+      <q cite="https://botafogo.com.br">Maior time do Brasil.</q>
+    </p>
+    <blockquote cite="https://botafogo.com.br"><p>Maior time do Brasil</p></blockquote> <!-- bloco de citação -->
+    <pre> <!-- tag de texto pré formatado, mantém os espaços-->
+                olha a identação
+      <code> <!-- tag para colocar a fonte de código -->
+print("Olá Mundo!") <!-- não da pra identar pq se não os espaços vão para a página-->
+      </code>
+    </pre>
+    <div style="background-color: gray;">Eu sou um bloco.</div> <!-- tag de container genérico em bloco -->
+    
+    <h3>Sub subtópicos</h3>
+    <p id="texto-menos-importante"> <!-- id pode identificar apenas um elemento -->
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+      Laboriosam aliquid temporibus, tenetur animi hic cumque officia quia nihil dolor modi? 
+      Earum officia dolore placeat hic molestiae illum magni rerum perferendis.
+    </p>
+
+    <h2 id="heading-dois" class="fundo-azul">Subtópicos</h2> <!-- a cor rosa se sobressaí pq o id tem mais prioridade que a class -->
+    <p style="background-color: lightslategrey;"> <!-- atributo style estiliza apenas o elemento -->
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+      Laboriosam aliquid temporibus, tenetur animi hic cumque officia quia nihil dolor modi? 
+      Earum officia dolore placeat hic molestiae illum magni rerum perferendis.
+    </p>
+
+  </body>
+
+</html>

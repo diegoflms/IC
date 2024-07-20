@@ -1,0 +1,1 @@
+Anotações e estudos do curso [HTML e CSS](https://www.youtube.com/playlist?list=PLbIBj8vQhvm00J3f3rD33tRuNLem8EgEA "link do curso") (Otávio Miranda), realizado nas férias do meio do ano de 2024.
