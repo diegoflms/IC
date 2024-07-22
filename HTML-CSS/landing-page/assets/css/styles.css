@@ -46,6 +46,8 @@ a {
     text-decoration: none;
 }
 
+/* ---------------------------------------------------------------------------------------------------------- */
+
 /* essa img é svg e veio do site 'svg background' */
 .main-background {
     background-image: url('../img/main-background.svg');
@@ -68,6 +70,12 @@ a {
 /* seção da página (inicio, galeria, forms, etc) */
 .section {
     min-height: 100vh;
+}
+
+/* ---------------------------------------------------------------------------------------------------------- */
+
+.menu-spacing { /* apenas para fazer o espaçamento que o 'fixed' do menu esconde */
+    height: 6rem;
 }
 
 .menu {
@@ -110,5 +118,18 @@ a {
     padding: 2rem;
     font-size: 1.8rem;
     color: var(--main-color);
+}
 
+/* ---------------------------------------------------------------------------------------------------------- */
+
+.intro-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--gap);
+}
+
+.intro-img img {
+    max-width: 100%;
+    height: auto;
 }
