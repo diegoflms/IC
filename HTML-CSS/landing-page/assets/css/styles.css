@@ -1,0 +1,114 @@
+:root { /* criando variáveis */
+    --main-color: #0A1128;
+    --gap: 30px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 2rem;
+}
+
+h1 {
+    font-size: 6rem;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 5.5rem;
+}
+
+h3 {
+    font-size: 5rem;
+}
+
+h4 {
+    font-size: 4.5rem;
+}
+
+h5 {
+    font-size: 4rem;
+}
+
+h6 {
+    font-size: 3.5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* essa img é svg e veio do site 'svg background' */
+.main-background {
+    background-image: url('../img/main-background.svg');
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+}
+
+.white-background {
+    background-color: #fff;
+}
+
+/* container para sustentar o conteúdo */
+.main-content {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: var(--gap);
+}
+
+/* seção da página (inicio, galeria, forms, etc) */
+.section {
+    min-height: 100vh;
+}
+
+.menu {
+    position: fixed; /* para rolar junto com a página */
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    border-bottom: 0.1rem solid lightgray; /* enfeite, fica show */
+}
+
+.menu h1 {
+    font-size: 2.3rem;
+    color: var(--main-color);
+}
+
+.menu h1 a {
+    color: inherit;
+}
+
+.menu a:hover {
+    background-color: rgb(240, 238, 238);
+}
+
+.menu-content { /* para trabalhar com flexbox, separar a logo da navegação */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0; /* tira o padding para os elementos da nav espaçarem com o padding deles */
+    padding-bottom: 0;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex; /* assim pode ajustar os li mais facilmente */
+}
+
+.menu ul li a {
+    display: block; /* assim, já quebra a linha e junta tudo, depois só espaçar */
+    padding: 2rem;
+    font-size: 1.8rem;
+    color: var(--main-color);
+
+}
