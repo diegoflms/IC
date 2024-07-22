@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid {
+    display: grid;
+    margin: 0 auto;
+    max-width: 1200px;
+    grid-template-columns: 130px 1fr 1fr; /* passa o tamanho das colunas na ordem; 1fr é o restante da tela
+                                             para não ter que repetir, pode usar a função 'repeat(10, 1fr)'
+                                             AINDA, para resolver o problema de responsividade e overflow sem usar media queries,
+                                             pode escrever 'repeat(auto-fill, minmax(320px, 1fr)' */
+    grid-template-rows: repeat(2, 1fr 2fr); /* semelhante ao columns. repeat funciona aqui tb.
+                                               ao criar uma grid simples nem precisa do rows */
+    gap: 30px; /* espaçamento entre os elementos; pode escrever nql sentido horário */
+}
+
+.grid div {
+    background-color: aqua;
+    min-height: 100px;
+}
+
+.grid div:nth-child(5) {
+    background-color: blueviolet;
+    grid-column-start: 2; /* para fazer merge, coluna de início e fim */
+    grid-column-end: 4;
+    /* existe semelhante para row */
+    /* para facilitar, pode usar span */
+    grid-row: span 2; /* pode escrever como '2 / 3' sendo inicio e fim das colunas
+                         ainda, pode usar 'grid-area: 1 / 1 / 4 / 4;' --> inicia na linha 1 e coluna 1 e termina na linha 4 e coluna 4 */
+    grid-column: span 2;
+}
+
+@media (max-width: 768px) {
+    .grid div:nth-child(5) {
+        grid-column: span 1;
+    }
+}

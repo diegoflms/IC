@@ -1,0 +1,97 @@
+/* aplicação, usando a página da aula 29 e umas coisas da aula 31 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth; /* rolar suavemente a tela */
+}
+
+.grid .col {
+    height: 300px;
+    width: 33.33%;
+    float: left;
+    padding: 15px;
+}
+
+p {
+    clear: both;
+}
+
+.grid::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.grid .col-content {
+    height: 100%;
+    width: 100%;
+    background-color: pink;
+    border-radius: 10%; /* border radius!!! */
+    box-shadow: 5px 5px 5px 5px lightblue; /* dois primeiros posição, terceiro 'glow' e quarto espalhamento */
+}
+
+.grid {
+    padding: 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 73px; /* espaço pra esconder o menu */
+}
+
+.menu { /* menu de site pega */
+    width: 100%;
+    position: fixed;
+    background-color: black;
+}
+
+.menu ul { /* fazer se comportar como linha lá */
+    list-style: none;
+    display: block;
+    max-width: 1200px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+.menu ul li { /* fazer se comportar como linha lá */
+    float: left;
+}
+
+.menu ul li a { /* estilizando o link */
+    display: block;
+    color: #fff;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.menu ul li a:hover { /* estilizando o link */
+    background-color: #333;
+}
+
+.full-page { /* estilizando lá em baixo */
+    max-width: 100%;
+    padding-top: 73px;
+    height: 100vh;
+    background-color: tomato;
+}
+
+.full-page-content { /* estilizando lá em baixo */
+    max-width: 1200px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+@media all and (max-width: 320px) {
+    .grid .col {
+        width: 100%;
+    }
+}
+
+@media all and (min-width: 321px) and (max-width: 768px)  {
+    .grid .col {
+        width: 50%;
+    }
+}

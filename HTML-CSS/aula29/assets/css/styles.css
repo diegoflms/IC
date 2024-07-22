@@ -1,0 +1,48 @@
+/* media queries e design responsivo aplicado na página da aula 24 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid .col {
+    height: 300px;
+    width: 33.33%;
+    float: left;
+    padding: 15px;
+}
+
+p {
+    clear: both;
+}
+
+.grid::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.grid .col-content {
+    height: 100%;
+    width: 100%;
+    background-color: pink;
+}
+
+.grid {
+    padding: 15px;
+}
+
+
+/* usado para aplicar if's no css */
+@media all and (max-width: 320px) { /* só é aplicado quando a condição for true; pode ser mais específico com "screen" "tv" etc */
+    .grid .col {
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 321px) and (max-width: 768px)  {
+    .grid .col {
+        width: 100%;
+    }
+}

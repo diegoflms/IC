@@ -1,0 +1,30 @@
+/* flexbox */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex-container {
+    display: flex; /* o comportamento continua sendo como display block (existe o inline-flex), afeta os filhos.
+                      ao definir como 'flex', ganha as seguintes propriedades */
+    flex-direction: row; /* define o eixo principal do flexbox, assim o outro eixo é o eixo perpendicular */
+    justify-content: center; /* alinha/posiciona de acordo com o eixo principal */
+    align-items: center; /* alinha/posiciona de acordo com o eixo secundário */
+    /* flex-wrap: wrap; /* permite o filho quebrar a linha */
+    /* ainda tem align-content como comando para trabalhar posição */
+    background-color: lightcoral;
+    height: 500px;
+}
+
+.flex-item {
+    /* flex-grow: 1; /* pega o espaço que está sobrando e cresce o tamanho do elemento para o tamanho específico da tela, tipo um 100% */
+    /* flex-basis: 320px; /* determina o min-width, porém aplicado a flex */
+    /* flex-shrink: 1; /* permite que o elemento diminua e não tenha overflow, gerado pelo basis */
+    /* pode usar o atalho 'flex: 1 1 320px;' ; grow shrink e basis. essas unidades são proporção */
+    background-color: lightseagreen;
+    margin: 5px;
+}
+
+/* meio vago, revisar!! */

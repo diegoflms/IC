@@ -1,0 +1,18 @@
+/* formatação de texto */
+
+p {
+    color: white; /* cor do texto */
+    background-color: black; /* cor de fundo */
+    font-size: 30px; /* tamanho da fonte */
+    font-style: italic; /* estilo da fonte */
+    font-weight: bold; /* o quão forte a fonte fica */
+    direction: rtl; /* direção do texto */
+    letter-spacing: 5px; /* espaçamento entre as letras */
+    word-spacing: 10px; /* espaçamento entre as palavras */
+    line-height: 30px; /* altura da linha */
+    text-align: center; /* alinhamento do texto */
+    text-decoration: line-through; /* pode colocar os outros dois (overline e underline) juntos */
+    text-indent: 50px; /* espaçamento no início dos parágrafos */
+    text-shadow: -1px 1px 1px magenta; /* sombra do texto, quebra a cabeça ai */
+    text-transform: capitalize; /* editar os char do texto */
+}
