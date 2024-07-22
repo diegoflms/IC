@@ -68,7 +68,7 @@ a {
 .main-content {
     max-width: 120rem;
     margin: 0 auto;
-    padding: var(--gap);
+    padding: 8rem var(--gap);
 }
 
 /* seção da página (inicio, galeria, forms, etc) */
@@ -146,9 +146,10 @@ a {
 
 .titulos-content {
     max-width: 64rem;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    flex-wrap: nowrap;
     justify-content: center;
     text-align: center;
 }
@@ -158,7 +159,6 @@ a {
 }
 
 .titulos-content h2 {
-    margin-top: 3rem;
     margin-bottom: 3rem;
     line-height: 1;
 }
@@ -166,7 +166,7 @@ a {
 /* ---------------------------------------------------------------------------------------------------------- */
 
 .grid-um-content {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
@@ -210,3 +210,10 @@ a {
 }
 
 /* ---------------------------------------------------------------------------------------------------------- */
+
+.gallery-img {
+    width: 100%;
+    max-width: 36rem;
+    max-height: 36rem;
+    overflow: hidden;
+}
