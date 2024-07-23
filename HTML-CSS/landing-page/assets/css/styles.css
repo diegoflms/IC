@@ -6,6 +6,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html {
@@ -248,4 +249,52 @@ table caption {
 .responsive-table {
     overflow: hidden; /* kkkkkkkkkkk passei perrengue aqui */
     overflow-x: auto;
+}
+
+/* ---------------------------------------------------------------------------------------------------------- */
+
+.contact-form fieldset {
+    border: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+}
+
+.form-group {
+    flex: 1 1 40rem;
+}
+
+.form-group label {
+    display: block;
+}
+
+.form-group input, .form-group textarea {
+    border: none;
+    background-color: lightgray;
+    padding: 1rem 1.5rem;
+    width: 100%;
+    font-size: 1.6rem;
+}
+
+.form-group button {
+    border: 0.5rem solid var(--main-color);
+    background: none;
+    color: var(--main-color);
+    padding: 0.8rem 2rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+    border-radius: 2rem;
+}
+
+.form-group button:hover {
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+legend {
+    font-style: italic;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
 }
