@@ -49,6 +49,31 @@ a {
     text-decoration: none;
 }
 
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2rem;
+    min-width: 36rem;
+}
+
+table td, th {
+    padding: 0.7rem;
+    border: 0.1rem solid #fff;
+}
+
+thead {
+    background-color: rgba(256, 256, 256, 0.4);
+    color: var(--main-color);
+}
+
+table caption {
+    font-style: italic;
+    font-size: 1.4rem;
+    caption-side: bottom;
+    text-align: right;
+    margin-top: 1rem;
+}
+
 /* ---------------------------------------------------------------------------------------------------------- */
 
 /* essa img é svg e veio do site 'svg background' */
@@ -216,4 +241,11 @@ a {
     max-width: 36rem;
     max-height: 36rem;
     overflow: hidden;
+}
+
+/* ---------------------------------------------------------------------------------------------------------- */
+
+.responsive-table {
+    overflow: hidden; /* kkkkkkkkkkk passei perrengue aqui */
+    overflow-x: auto;
 }
