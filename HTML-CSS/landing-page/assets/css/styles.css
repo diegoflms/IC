@@ -119,6 +119,7 @@ table caption {
     right: 0;
     width: 100%;
     border-bottom: 0.1rem solid lightgray; /* enfeite, fica show */
+    z-index: 2;
 }
 
 .menu h1 {
@@ -298,3 +299,30 @@ legend {
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
 }
+
+/* ---------------------------------------------------------------------------------------------------------- */
+
+/* o que mais ficou a desejar foi que não está 100% responsivo, as seções que usam grid não estão ok... ;( */
+
+@media (max-width: 800) {
+    .grid {
+        grid-template-columns: 1fr; /* pq nao quebrou? */
+    }
+
+    .gallery-img {
+        width: 100%;
+        max-width: 100%;
+        max-height: 100%;
+        overflow: hidden;
+    }
+
+    .gallery-img img {
+        width: 100%;
+    }
+
+    .grid-um-content {
+        display: block;
+    }
+}
+
+/* ---------------------------------------------------------------------------------------------------------- */
