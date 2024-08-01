@@ -1,1 +1,1 @@
-Anotações e estudos do curso [Bootstrap CSS Framework](https://www.youtube.com/watch?v=-qfEOE4vtxE "link do curso") (FCC), realizado nas férias do meio do ano de 2024.
+Anotações e estudos do curso [Bootstrap CSS Framework](https://www.youtube.com/watch?v=-qfEOE4vtxE "link do curso") (FCC), com o [W3S](https://www.w3schools.com/bootstrap5/index.php "link do site") de material complementar, realizado nas férias do meio do ano de 2024.
