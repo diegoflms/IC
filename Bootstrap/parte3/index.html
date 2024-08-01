@@ -1,0 +1,77 @@
+<!-- cards -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="container pt-5 pb-5"> <!-- padding top/bottom, vai de 0 a 5-->
+        <div class="row">
+            <div class="col-3">
+                <div class="card"> <!-- a classe card da o formato de um card e uma estilização padrão -->
+                    <!-- para não ter q ajustar o tamanho "na mão", pode usar cards dentro de grids ou utilities -->
+                     <!-- utilities vão ser vistas dps, mas a grosso modo consiste em colocar o card em uma row e ajustar com w-50 (50% das colunas)-->
+                    <img src="https://picsum.photos/300/200" class="card-img-top" alt="random img"> <!-- link de random img; pode ser bottom tb -->
+                    <div class="card-body"> <!-- card body, title e text (remove bm do <p> se for o ultimo elemento) são mais estilizações padrões para cards -->
+                        <h5 class="card-title">Título do card</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, non in cum numquam, cupiditate ducimus accusamus iste similique voluptatibus vitae et quas placeat laudantium culpa! Nesciunt optio repellat sapiente recusandae.</p>
+                        <a href="#" class="btn btn-primary card-link">Link</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card">
+                    <div class="card-header">Cabeça do card</div> <!-- estilização para o header do card -->
+                    <div class="card-body">
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, non in cum numquam, cupiditate ducimus accusamus iste similique voluptatibus vitae et quas placeat laudantium culpa! Nesciunt optio repellat sapiente recusandae.</p>
+                    </div>
+                    <div class="card-footer text-muted">2 dias atrás</div> <!-- estilização para o footer; text muted diminui a cor -->
+                </div>
+            </div>
+            <div class="col-6"> <!-- card com img do lado, basta tratar com grid; abstrações!! -->
+                <div class="card">
+                    <div class="row g-0"> <!-- g-0 pra img colar no texto -->
+                        <div class="col-4"><img src="https://picsum.photos/200/300" class="card-img-top" alt="random img"></div>
+                        <div class="col-8">
+                            <div class="card-header">Header</div>
+                            <div class="card-body">
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptate adipisci inventore iste dicta quisquam rerum ipsam sint asperiores, nostrum amet. Dolores mollitia ullam velit ipsa consectetur sunt, repudiandae praesentium!</p>
+                            </div>
+                            <div class="card-footer text-muted">Atualizado à 5 minutos</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="card-group"> <!-- ainda tem card group, pra facilitar e não precisar usar grid pra ter esse resultado, mais do mesmo, oq muda é a classe card-group -->
+                <div class="card bg-primary text-white"> <!-- background color no card -->
+                    <img src="https://picsum.photos/300/200" class="card-img-top" alt="random img">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, iusto quasi eum commodi deserunt eligendi vero nesciunt aspernatur adipisci odio rerum ex reprehenderit molestias magni optio odit impedit incidunt quam.
+                </div>
+                <div class="card bg-success text-white">
+                    <img src="https://picsum.photos/300/200" class="card-img-top" alt="random img">
+                    <div class="card-img-overlay"> <!-- imagem de fundo com texto por cima -->
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, iusto quasi eum commodi deserunt eligendi vero nesciunt aspernatur adipisci odio rerum ex reprehenderit molestias magni optio odit impedit incidunt quam.
+                    </div>
+                </div>
+                <div class="card bg-warning border-danger text-white"> <!-- ainda tem a border, para poder fazer cards ""inversos"" -->
+                    <img src="https://picsum.photos/300/200" class="card-img-top" alt="random img">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi, aperiam cupiditate. Magnam voluptas commodi sunt nemo a, sit sequi dolorum iusto ratione soluta quis in. Voluptas ipsa quam adipisci earum.
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>
