@@ -1,0 +1,1 @@
+Anotações e estudos do curso [Bootstrap CSS Framework](https://www.youtube.com/watch?v=-qfEOE4vtxE "link do curso") (FCC), realizado nas férias do meio do ano de 2024.
