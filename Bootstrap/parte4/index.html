@@ -1,0 +1,85 @@
+<!-- tipografia -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-3"> <!-- os headings tem uma fonte mais forte e seus tamanhos responsivos -->
+                <h1>h1. bootstrap</h1>
+                <h2>h2. bootstrap</h2>
+                <h3>h3. bootstrap</h3>
+                <h4>h4. bootstrap</h4>
+                <h5>h5. bootstrap</h5>
+                <h6>h6. bootstrap</h6>
+            </div>
+            <div class="col-3"> <!-- trata igual o heading, mais semântica msm -->
+                <p class="h1">h1. bootstrap</p>
+                <p class="h2">h2. bootstrap</p>
+                <p class="h3">h3. bootstrap</p>
+                <p class="h4">h4. bootstrap</p>
+                <p class="h5">h5. bootstrap</p>
+                <p class="h6">h6. bootstrap</p>
+            </div>
+            <div class="col-6"> <!-- display tem por padrão uma fonte mais fraca e maior que o heading -->
+                <h1 class="display-1">d1 bootstrap</h1>
+                <h1 class="display-2">d2 bootstrap</h1>
+                <h1 class="display-3">d3 bootstrap</h1>
+                <h1 class="display-4">d4 bootstrap</h1>
+                <h1 class="display-5">d5 bootstrap</h1>
+                <h1 class="display-6">d6 bootstrap</h1>
+            </div>
+        </div>
+        <hr>
+        <div class="col-12">
+            <h1>Principal <small>secundário</small></h1> <!-- usado para ter um texto secundário no heading, tem a classe tb -->
+            <p class="h1">Principal <small>secundário</small></p>
+            <p><mark>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur laudantium hic illum ab quos architecto</mark> consectetur commodi quis veniam, fugiat in, autem error unde molestias repudiandae quasi placeat, minus <abbr title="latim">numquam?</abbr></p>
+            <!-- mark é como se passasse um marca-texto amarelo com um padding a mais tb; tem a classe tb -->
+            <!-- abbr vai deixar com um sublinhado de pontinho e o cursor com "?" quando hover; precisa de um title -->
+            <!-- tem mais trem inline mas não muda mt do CSS padrão (sublinhado, negrito, semântica, etc) -->
+            <!-- e umas tags tipo <dl>, <code>, <pre>, <kbd> (para atalhos do teclado), etc que muda um cadin -->
+            <!-- tb tem text-center, start e end; text-lowercase, uppercase, capitalize; text-nowrap; etc -->
+        </div>
+        <hr>
+        <blockquote class="blockquote text-end"> <!-- classe que formata um blockquote; alinhar usando isso ai -->
+            <p>O tolo teme a noite<br>Como a noite<br>Vai temer o fogo</p>
+            <footer class="blockquote-footer">Seu Jorge</footer> <!-- para poder assinar a citação -->
+        </blockquote>
+        <hr>
+        <div class="row">
+            <div class="col-6">
+                <ul class="list-unstyled"> <!-- tira o estilo da lista, mas não das listas filhas -->
+                    <li>Um</li>
+                    <li>Dois</li>
+                    <li>Três</li>
+                    <li>Quatro</li>
+                    <li>Cinco</li>
+                    <ul>
+                        <li>Um</li>
+                        <li>Dois</li>
+                        <li>Três</li>
+                    </ul>
+                </ul>
+            </div>
+            <div class="col-6">
+                <ul class="list-inline">
+                    <li class="list-inline-item">Home</li>
+                    <li class="list-inline-item">Image</li>
+                    <li class="list-inline-item">About</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>
