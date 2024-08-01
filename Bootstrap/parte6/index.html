@@ -1,0 +1,34 @@
+<!-- utilities -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+<body>
+    <!-- aproveitando, tem: mt, mb, ms, me, mx, my, m e auto (serve para p - padding - tb; o auto centraliza); os tamanhos vão de 0 a 5; tb tem width e height: w-25, w-50, w-75, w-100 e w-auto (mesma para h) -->
+    <div class="container my-5 mx-auto border border-black border-2 w-50 p-5 rounded"> <!-- sobre border: tem a orientação (border-top, bottom, start e end) indo de 0 a 5; cores (border-primary etc); grossura (border-1, até 5); rounded (...) -->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore labore amet consectetur facere cumque qui quos numquam voluptates! Recusandae fugiat velit suscipit qui voluptas temporibus corrupti modi, quisquam voluptatem perferendis amet aspernatur architecto sapiente. Labore qui, eos voluptatum laborum tempora ullam esse nihil, enim incidunt sequi consequuntur voluptas corrupti harum.</p>
+        <p class="d-none d-md-block d-lg-none">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, itaque ipsum minus, voluptatibus assumenda vitae libero et quam ducimus debitis esse voluptatum nulla possimus dolores suscipit repellendus deleniti voluptates dignissimos quaerat. Molestias voluptatem unde deserunt magnam quos explicabo porro officiis, reiciendis modi! Consequatur nostrum deserunt dignissimos doloribus beatae, cumque fugit maiores dolorum, ad incidunt officiis alias enim asperiores eius assumenda corrupti impedit maxime ipsum itaque? Perspiciatis vel, cum aut adipisci quos reiciendis quasi expedita tenetur officia, officiis consequatur excepturi eligendi ratione quaerat culpa, earum odio nulla! Nesciunt, rem delectus laboriosam, perferendis adipisci libero placeat nisi expedita sequi animi nihil ex.</p> <!-- ao escrever essas classes, diz para o elemento sumir quando for inferior ao md e superior ao lg -->
+    </div>
+    <div class="d-flex flex-row-reverse m-5 border border-1 border-black justify-content-evenly shadow-lg">
+        <!-- d-flex é display flex (engual CSS); flex-row, row-reverse, column, column-reverse são para "ordenar"
+             para alinhar tem justify-content-start, end, center, between, around, evenly; shadow-sm, shadow e shadow-lg existem! -->
+        <div class="p-2">Um</div>
+        <div class="p-2">Dois</div>
+        <div class="p-2">Três</div>
+    </div>
+    <div class="container my-5">
+        <div class="ratio ratio-21x9"> <!-- videos responsivos -->
+            <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+        </div>
+    </div>
+    <span class="visually-hidden">estou escondido</span> <!-- invisível na página, apenas screenreaders podem ler -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>
