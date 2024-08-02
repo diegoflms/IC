@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --------------------------------------------------------------------------------------------- */
+
+.menu-spacing {
+    height: 70px;
+}
+
+.main-bg {
+    background-image: url('../img/endless-constellation.svg');
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    min-height: 100vh;
+    padding: 80px 0;
+}
+
+.sec-bg {
+    color: #fff;
+    background-color: #212529;
+    min-height: 100vh;
+    padding: 80px 0;
+}
+
+/* --------------------------------------------------------------------------------------------- */
+
+#collapsibleNavbar a:hover {
+    background-color: rgba(120, 120, 120, 0.2);
+}
+
+/* --------------------------------------------------------------------------------------------- */
+
+.intro-text-content {
+    font-family: sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    line-height: 1.2;
+}
+.heading-intro {
+    margin-bottom: 60px;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+/* --------------------------------------------------------------------------------------------- */
+
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #212529;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #fff;
+}
