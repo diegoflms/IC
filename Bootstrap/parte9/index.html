@@ -1,0 +1,140 @@
+<!-- nav e navbar -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+<body>
+    <ul class="nav justify-content-center"> <!-- classes p configurar a nav; alinhar; pra deixar vertical (.flex-column) -->
+        <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">More</a></li>
+    </ul>
+
+    <hr>
+
+    <ul class="nav justify-content-center nav-tabs nav-justified"> <!-- deixa com tabs; justified faz com que se encaixe igualmente no espaço fornecido (funciona com pills tb)  -->
+        <li class="nav-item"><a href="#" class="nav-link active">Home</a></li> <!-- pra deixar uma selecionada basta active -->
+        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">More</a></li>
+    </ul>
+
+    <hr>
+
+    <ul class="nav justify-content-center nav-pills"> <!-- deixa com pills -->
+        <li class="nav-item"><a href="#" class="nav-link active">Home</a></li> <!-- pra deixar uma selecionada basta active -->
+        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">More</a></li>
+    </ul>
+
+    <hr>
+
+    <ul class="nav justify-content-center nav-tabs">
+        <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+        <li class="nav-item dropdown"> <!-- classes para ter o dropdown -->
+            <a class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" href="#">Dropdown</a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Link 1</a></li>
+                <li><a class="dropdown-item" href="#">Link 2</a></li>
+                <li><a class="dropdown-item" href="#">Link 3</a></li>
+            </ul>
+        </li>
+        <li class="nav-item"><a href="#" class="nav-link">More</a></li>
+    </ul>
+
+    <hr>
+
+    <ul class="nav justify-content-center nav-pills">
+        <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+        <li class="nav-item dropdown"> <!-- classes para ter o dropdown -->
+            <a class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" href="#">Dropdown</a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Link 1</a></li>
+                <li><a class="dropdown-item" href="#">Link 2</a></li>
+                <li><a class="dropdown-item" href="#">Link 3</a></li>
+            </ul>
+        </li>
+        <li class="nav-item"><a href="#" class="nav-link">More</a></li>
+    </ul>
+
+    <hr>
+
+    <div class="container border">
+        <ul class="nav nav-tabs">
+            <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#home">Home</a></li> <!-- agora com esses "a mais", é possível untoggle e mudar o active (que fica só como sendo o inicial) -->
+            <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#menu1">Menu 1</a></li>
+            <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#menu2">Menu 2</a></li>
+        </ul>
+        <div class="tab-content"> <!-- essa div ainda esconde o conteudo com um overlay, ai só mostra quando for ativado pelo link -->
+            <div class="tab-pane container active" id="home">asdgdsfgh</div>
+            <div class="tab-pane container fade" id="menu1">ddiego</div>
+            <div class="tab-pane container fade" id="menu2">73434757</div>
+          </div>
+    </div>
+
+    <hr>
+
+    <div class="container border">
+        <ul class="nav nav-pills"> <!-- mesma coisa do de cima, só mudar pra 'pill' -->
+            <li class="nav-item"><a class="nav-link active" data-bs-toggle="pill" href="#home2">Home</a></li>
+            <li class="nav-item"><a class="nav-link" data-bs-toggle="pill" href="#menu12">Menu 1</a></li>
+            <li class="nav-item"><a class="nav-link" data-bs-toggle="pill" href="#menu22">Menu 2</a></li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane container active" id="home2">brasil</div>
+            <div class="tab-pane container fade" id="menu12">pc</div>
+            <div class="tab-pane container fade" id="menu22">pedro</div>
+          </div>
+    </div>
+
+    <hr>
+
+    <nav class="navbar navbar-expand-md bg-success navbar-dark"> <!-- classe da navbar; vai empilhar quando bater o breakpoint; se não tiver o expand vai ser sempre vertical; bg com as cores padrão; navbar-dark e light colocam cores opostas no texto -->
+        <div class="container justify-content-center"> <!-- pra centralizar mesma coisa tb, só usar no lugar certo -->
+            <a href="#" class="navbar-brand"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Escudo_Botafogo.png/800px-Escudo_Botafogo.png" style="width: 35px"></a> <!-- navbar brand da um highlight na marca, da pra usar img tb -->
+            <ul class="navbar-nav"> <!-- quando usar navbar vai essa classe, o resto igual acima -->
+                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">More</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <hr>
+
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top"> <!-- se tirar o expand vai ser sempre com navbar escondida; para deixar a navbar fixa tem o stickytop, fixed-top e fixed-bottom -->
+        <div class="container">
+          <a class="navbar-brand" href="#">Logo</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button> <!-- botão que faz aparecer a navbar -->
+          <div class="collapse navbar-collapse" id="collapsibleNavbar"> <!-- classes p fazer o trem funcionar; id -->
+            <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+              <li class="nav-item dropdown"> <!-- classes para o dropdown -->
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Dropdown</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Link</a></li>
+                  <li><a class="dropdown-item" href="#">Another link</a></li>
+                  <li><a class="dropdown-item" href="#">A third link</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <hr>
+
+      <div style="height: 5000px;">oi</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>
