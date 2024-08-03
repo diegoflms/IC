@@ -51,8 +51,37 @@
       <p id="value">Cart Quantity: 0</p>
     </div>
 
+    <hr>
+
+    <!-- boberage do curso do ytb (calc) -->
+    <div class="container">
+      <h3>Calculadora</h3>
+      <p class="border-primary border border-2 rounded p-2 w-25" id="visor">0</p>
+      <button class="btn btn-outline-primary" onclick='calculadora = "0"; exibirValor();'>C</button>
+      <button class="btn btn-outline-primary" onclick='calculadora += "0"; exibirValor();'>0</button>
+      <button class="btn btn-outline-primary" onclick='calculadora += "1"; exibirValor();'>1</button>
+      <button class="btn btn-outline-primary" onclick='calculadora += "2"; exibirValor();'>2</button>
+      <button class="btn btn-outline-primary" onclick='calculadora += "3"; exibirValor();'>3</button>
+      <button class="btn btn-outline-primary" onclick='calculadora += "4"; exibirValor();'>4</button>
+      <button class="btn btn-outline-primary" onclick='calculadora += "5"; exibirValor();'>5</button>
+      <button class="btn btn-outline-primary" onclick='calculadora += "6"; exibirValor();'>6</button>
+      <button class="btn btn-outline-primary" onclick='calculadora += "7"; exibirValor();'>7</button>
+      <button class="btn btn-outline-primary" onclick='calculadora += "8"; exibirValor();'>8</button>
+      <button class="btn btn-outline-primary" onclick='calculadora += "9"; exibirValor();'>9</button>
+      <button class="btn btn-outline-primary" onclick='calculadora += "+"; exibirValor();'>+</button>
+      <button class="btn btn-outline-primary" onclick='calculadora += "-"; exibirValor();'>-</button>
+      <button class="btn btn-outline-primary" onclick='calculadora += "*"; exibirValor();'>*</button>
+      <button class="btn btn-outline-primary" onclick='calculadora += "/"; exibirValor();'>/</button>
+      <button class="btn btn-outline-primary" onclick='document.getElementById("visor").innerHTML = eval(calculadora);'>=</button>
+    </div>
+
     <script>
       var cartQuantity = 0; // é usado camelCase em js para nomear variáveis!!
+      var calculadora = "";
+      var telaCalculadora = "";
+      function exibirValor() {
+        document.getElementById("visor").innerHTML = calculadora;
+      }
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
