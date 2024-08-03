@@ -1,0 +1,1 @@
+Anotações e estudos do curso [JavaScript Tutorial Full Course - Beginner to Pro](https://www.youtube.com/watch?v=EerdGm-ehJQ "link do curso") (FCC), com o [W3S](https://www.w3schools.com/js/default.asp "link do site") de material complementar, realizado nas férias do meio do ano de 2024.
